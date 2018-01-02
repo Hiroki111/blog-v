@@ -17,4 +17,6 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+//static pages
+Route::get('/About', 'HomeController@showAbout');
 Route::get('/{url}', 'HomeController@show');

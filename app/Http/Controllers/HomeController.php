@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Page;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -10,14 +11,16 @@ class HomeController extends Controller
 
     protected $request;
     protected $post;
+    protected $page;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(Request $request, Post $post)
+    public function __construct(Request $request, Post $post, Page $page)
     {
         $this->post    = $post;
+        $this->page    = $page;
         $this->request = $request;
     }
 
@@ -32,6 +35,15 @@ class HomeController extends Controller
             'posts' => $this->post->published()
                 ->orderBy('id', 'dec')
                 ->paginate(5),
+        ]);
+    }
+
+    public function showAbout()
+    {
+        $post = $this->page->where('slug', '=', 'about')
+            ->first();
+        return view('post', [
+            'post' => $post,
         ]);
     }
 

@@ -88,6 +88,12 @@ body {
     margin-top: 20px;
 }
 
+.link_next_prev{
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /*a{text-decoration: none;}
 */
 p{

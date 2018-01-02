@@ -4,6 +4,7 @@
     <title>@yield('title')</title>
     <link href="{{ asset('css/www.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="{{ asset('js/lib.js') }}"></script>
 
 </head>
@@ -21,7 +22,7 @@
         </div>
         <div id="side_bar">
             <a href="/About">
-                <h2>Author</h2>
+                <h2 style="font-weight: bold;">Author</h2>
                 <img id="about_image" src="/storage/template/about.png">
             </a>
         </div>
