@@ -109,7 +109,7 @@ p{
     margin: 1.6em 0;
 }
 /* div, which may contain ul, li, etc. */
-#side_bar{
+#sidebar{
     float: right;
     width: 25%;
     float: top;
@@ -117,14 +117,26 @@ p{
     text-align: left;
 }
 
-div.post_wrapper  a{
+div.post_wrapper div  a{
     color: black;
 }
 
-#side_bar > a{  
+.sidebar_link{  
    /* text-decoration: none;*/
     color: black;
 }
+
+.sidebar_header{
+    font-weight: bold;
+}
+
+.sidebar_topic_link{
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
 
 /* "list-style" applies to ul */
 #sidebar_item{

@@ -20,11 +20,25 @@
         <div id="posts">
             @yield('content')
         </div>
-        <div id="side_bar">
-            <a href="/About">
-                <h4 style="font-weight: bold;">About myself</h4>
-                <img id="about_image" src="/storage/template/about.png">
-            </a>
+        <div id="sidebar">
+            <div>
+                <a class="sidebar_link" href="/About">
+                    <h3 class="sidebar_header">About myself</h3>
+                    <img id="about_image" src="/storage/template/about.png">
+                </a>
+            </div>
+            <div>
+                <h3 class="sidebar_header">Topics</h3>
+                @foreach($categories as $category)
+                <h4 class="sidebar_topic">
+
+                        <a href="" class="sidebar_topic_link">
+                    {{$category->name}}
+                        </a>
+
+                </h4>
+                @endforeach
+            </div>
         </div>
     </div>
 </body>

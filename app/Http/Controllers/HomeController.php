@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Page;
 use App\Post;
 use Illuminate\Http\Request;
@@ -12,16 +13,18 @@ class HomeController extends Controller
     protected $request;
     protected $post;
     protected $page;
+    protected $category;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(Request $request, Post $post, Page $page)
+    public function __construct(Request $request, Post $post, Page $page, Category $category)
     {
-        $this->post    = $post;
-        $this->page    = $page;
-        $this->request = $request;
+        $this->post     = $post;
+        $this->page     = $page;
+        $this->request  = $request;
+        $this->category = $category;
     }
 
     /**
@@ -32,9 +35,10 @@ class HomeController extends Controller
     public function index()
     {
         return view('index', [
-            'posts' => $this->post->published()
+            'posts'      => $this->post->published()
                 ->orderBy('id', 'dec')
                 ->paginate(5),
+            'categories' => $this->category->all(),
         ]);
     }
 
@@ -43,7 +47,8 @@ class HomeController extends Controller
         $post = $this->page->where('slug', '=', 'about')
             ->first();
         return view('post', [
-            'post' => $post,
+            'post'       => $post,
+            'categories' => $this->category->all(),
         ]);
     }
 
@@ -62,9 +67,10 @@ class HomeController extends Controller
             ->first();
 
         return view('post', [
-            'post' => $post,
-            'prev' => $prev,
-            'next' => $next,
+            'post'       => $post,
+            'prev'       => $prev,
+            'next'       => $next,
+            'categories' => $this->category->all(),
         ]);
     }
 }
