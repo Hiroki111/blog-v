@@ -12,8 +12,8 @@
     <header>
         <a href="/" id="logo_link">
             <img id="logo_image" src="/storage/template/logo.jpeg">
-            <h1 id="header_title">Hiroki.com</h1>
-            <p id="subheader_title">Web developer</p>
+            <h1 id="header_title">Hiroki's Blog</h1>
+            <p id="subheader_title">Web development with Laravel, React.js and more</p>
         </a>
     </header>
     <div id="container">
@@ -22,7 +22,7 @@
         </div>
         <div id="side_bar">
             <a href="/About">
-                <h2 style="font-weight: bold;">Author</h2>
+                <h4 style="font-weight: bold;">About myself</h4>
                 <img id="about_image" src="/storage/template/about.png">
             </a>
         </div>

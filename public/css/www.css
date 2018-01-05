@@ -38,6 +38,13 @@ header{
     color: black;
     text-align: left;
     margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.continue_reading_btn{
+    background-color: #D3D3D3;
+    margin-top: 15px;
 }
 
 body {
@@ -50,7 +57,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #posts{
@@ -99,6 +106,7 @@ body {
 */
 p{
     font-size: 120%;
+    margin: 1.6em 0;
 }
 /* div, which may contain ul, li, etc. */
 #side_bar{
@@ -109,8 +117,12 @@ p{
     text-align: left;
 }
 
+div.post_wrapper  a{
+    color: black;
+}
+
 #side_bar > a{  
-    text-decoration: none;
+   /* text-decoration: none;*/
     color: black;
 }
 
