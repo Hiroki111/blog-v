@@ -57,6 +57,11 @@ class HomeController extends Controller
         $post = $this->post->where('slug', '=', $url)
             ->published()
             ->first();
+
+        if (empty($post)) {
+            abort(404);
+        }
+
         $prev = $this->post->where('id', '<', $post->id)
             ->published()
             ->orderBy('id', 'dec')

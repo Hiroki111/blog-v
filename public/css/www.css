@@ -6,7 +6,6 @@ header{
     max-width: 1000px;
     margin: 0 auto;
     margin-top: -20px;
-    padding-top: 20px;
 }
 
 #logo_image{
@@ -31,6 +30,7 @@ header{
     text-align: left;
     margin-bottom: 0;
     font-weight: bold;
+    padding-top: 25px;
 }
 
 #subheader_title{
@@ -49,6 +49,30 @@ header{
 
 body {
     margin: 0;
+}
+
+#navigation_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#navigation_bar li{
+    float: left;
+    margin-right: 10px;
+}
+
+#navigation_bar li a{
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+    color: black;
+
 }
 
 #container{
@@ -122,8 +146,8 @@ div.post_wrapper div  a{
 }
 
 .sidebar_link{  
-   /* text-decoration: none;*/
-    color: black;
+ /* text-decoration: none;*/
+ color: black;
 }
 
 .sidebar_header{
