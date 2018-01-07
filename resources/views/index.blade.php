@@ -1,6 +1,6 @@
 @extends('layouts.www.master')
 
-@section('title', 'Hiroki.com')
+@section('title', env('APP_NAME'))
 
 @section('content')
 

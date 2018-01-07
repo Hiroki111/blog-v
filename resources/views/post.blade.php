@@ -1,6 +1,6 @@
 @extends('layouts.www.master')
 
-@section('title', 'Hiroki.com - '.$post->title)
+@section('title', env('APP_NAME').$post->title)
 
 @section('content')
 
