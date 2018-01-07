@@ -24,6 +24,12 @@
 </div>
 @endforeach
 
+@if(count($posts) === 0)
+<div>
+	<h1>No Article Found</h1>
+</div>
+@endif
+
 <div class="pagination_links">
 	{{ $posts->links() }}
 </div>

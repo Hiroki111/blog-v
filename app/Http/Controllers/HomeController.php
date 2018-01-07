@@ -78,4 +78,15 @@ class HomeController extends Controller
             'categories' => $this->category->all(),
         ]);
     }
+
+    public function searchWithCategory($id)
+    {
+        return view('index', [
+            'posts'      => $this->post->published()
+                ->orderBy('id', 'dec')
+                ->where('category_id', '=', $id)
+                ->paginate(5),
+            'categories' => $this->category->all(),
+        ]);
+    }
 }

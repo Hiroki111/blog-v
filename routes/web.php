@@ -19,4 +19,5 @@ Route::group(['prefix' => 'admin'], function () {
 
 //static pages
 Route::get('/About', 'HomeController@showAbout');
+Route::get('/category/{id}', 'HomeController@searchWithCategory');
 Route::get('/{url}', 'HomeController@show');

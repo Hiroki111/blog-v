@@ -15,6 +15,15 @@
             @yield('content')
         </div>
         <div id="sidebar">
+            <div style="display: flex;">
+            <!--
+            Replace the following form with Google Search
+            <form >
+                    <input type="password" style="flex: 1;">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            -->
+            </div>
             <div>
                 <h3 class="sidebar_header">Topics</h3>
                 @foreach($categories as $category)
