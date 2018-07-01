@@ -13,7 +13,7 @@
 			<i style="margin-left: 20px;" class="fa fa-file-text"></i> {{$post->category->name}}
 		@endif
 	</h4>
-<div >
+<div>
 	<div>{!! $post->body !!}</div>
 </div>
 <div class="link_next_prev">

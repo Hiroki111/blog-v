@@ -25,7 +25,7 @@
             -->
             </div>
             <div>
-                <h3 class="sidebar_header">Topics</h3>
+                <h3 class="sidebar_header">Categories</h3>
                 @foreach($categories as $category)
                 <h4 class="sidebar_topic">
                     <a href="/category/{{$category->id}}" class="sidebar_topic_link">
@@ -36,5 +36,6 @@
             </div>
         </div>
     </div>
+    @include('layouts.www.footer')
 </body>
 </html>
