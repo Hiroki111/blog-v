@@ -12,6 +12,7 @@ header{
     float: left;
     max-height: 140px;
     max-width: 150px;
+    margin-right: 25px;
 }
 
 #about_image{
@@ -39,7 +40,7 @@ header{
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: bold;
+    margin-top: 5px !important;
 }
 
 .continue_reading_btn{
