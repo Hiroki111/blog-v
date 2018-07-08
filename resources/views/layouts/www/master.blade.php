@@ -6,6 +6,8 @@
     <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="{{ asset('js/lib.js') }}"></script>
+    <script src="{{ asset('vendor/code-prettify-master/loader/run_prettify.js') }}"></script>
+
 </head>
 <body>
     @include('layouts.www.header')
