@@ -18,7 +18,9 @@
 		@endif
 	</h4>
 	<div class="post_excerpt">
-		<div id="body_{{$post->id}}">{!! $post->excerpt !!}</div>
+		<div id="body_{{$post->id}}">
+			<p>{!! $post->excerpt !!}</p>
+		</div>
 		<a href="/{{$post->slug}}" class="btn continue_reading_btn" role="button">Continue Reading</a>
 	</div>
 </div>
