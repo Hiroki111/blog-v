@@ -4,7 +4,7 @@
       <a style="padding: 8px;" href="/">Home</a>
     </li>
     <li>
-      <a style="padding: 8px;" href="/About">About Me</a>
+      <a style="padding: 8px;" href="/About">About</a>
     </li>
     <li style="height: 36px;">
       <a style="padding: 0;" href="https://github.com/Hiroki111" target="_blank">

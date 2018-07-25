@@ -26,6 +26,11 @@ class Post extends Model
 
     protected $guarded = [];
 
+    public function getExcerpt()
+    {
+        return strip_tags($this->body);
+    }
+
     public function save(array $options = [])
     {
         // If no author has been assigned, assign the current user's id as the author of the post

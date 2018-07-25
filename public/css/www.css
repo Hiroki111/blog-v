@@ -46,6 +46,7 @@ header{
 .continue_reading_btn{
     background-color: #D3D3D3;
     margin-top: 15px;
+    color: black;
 }
 
 body {
@@ -91,7 +92,8 @@ body {
 }
 
 .post_wrapper{
-    height: 270px;
+    height: 250px;
+    width: 90%;
 }
 
 .title_header{
@@ -106,7 +108,7 @@ body {
 
 .post_excerpt{
     line-height: 1.5em;
-    height: 9em;
+    height: 3em;
     overflow: hidden;
     text-overflow: ellipsis; 
 }
@@ -156,11 +158,13 @@ div.post_wrapper div  a{
 
 .sidebar_header{
     font-weight: bold;
+    padding-left: 5px;
+    font-style: italic;
 }
 
 .sidebar_topic_link{
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
     color: black;
 }

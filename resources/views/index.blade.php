@@ -19,10 +19,10 @@
 	</h4>
 	<div class="post_excerpt">
 		<div id="body_{{$post->id}}">
-			<p>{!! $post->excerpt !!}</p>
+			<p>{!! $post->getExcerpt() !!}</p>
 		</div>
-		<a href="/{{$post->slug}}" class="btn continue_reading_btn" role="button">Continue Reading</a>
 	</div>
+		<a href="/{{$post->slug}}" class="btn continue_reading_btn" role="button">Continue Reading</a>
 </div>
 @endforeach
 

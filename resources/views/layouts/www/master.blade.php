@@ -29,11 +29,11 @@
             <div>
                 <h3 class="sidebar_header">Categories</h3>
                 @foreach($categories as $category)
-                <h4 class="sidebar_topic">
+                <p class="sidebar_topic">
                     <a href="/category/{{$category->id}}" class="sidebar_topic_link">
                         {{$category->name}}
                     </a>
-                </h4>
+                </p>
                 @endforeach
             </div>
         </div>
